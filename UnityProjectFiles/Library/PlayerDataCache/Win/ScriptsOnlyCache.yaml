@@ -2,7 +2,10 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Credits
+    - FollowPlayer
+    - PlayerCollisionHandler
     - PlayerMovement
+    - SetFactors
     - Settings
     - StartMenu
     Unity.2D.Animation.Editor.dll:
@@ -19,11 +22,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.TextMeshPro.dll:
-    - TMPro.TMP_FontAsset
-    - TMPro.TMP_Settings
-    - TMPro.TMP_SpriteAsset
-    - TMPro.TMP_StyleSheet
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -63,6 +61,16 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1636}
+    - Class: 114
+      Script: {instanceID: 2156}
+    - Class: 114
+      Script: {instanceID: 2620}
+    - Class: 114
+      Script: {instanceID: 3002}
+    - Class: 114
+      Script: {instanceID: 3548}
+    - Class: 114
+      Script: {instanceID: 5054}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -86,8 +94,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
@@ -97,31 +103,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1712}
     - Class: 114
-      Script: {instanceID: 1784}
-    - Class: 114
-      Script: {instanceID: 2092}
-    - Class: 114
       Script: {instanceID: 2100}
     - Class: 114
-      Script: {instanceID: 2462}
+      Script: {instanceID: 2464}
     - Class: 114
-      Script: {instanceID: 2472}
+      Script: {instanceID: 2474}
     - Class: 114
-      Script: {instanceID: 2618}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 2654}
+      Script: {instanceID: 2656}
     - Class: 114
-      Script: {instanceID: 2790}
+      Script: {instanceID: 2792}
     - Class: 114
-      Script: {instanceID: 3000}
+      Script: {instanceID: 3002}
     - Class: 114
-      Script: {instanceID: 3102}
+      Script: {instanceID: 3104}
     - Class: 114
-      Script: {instanceID: 4236}
-    - Class: 114
-      Script: {instanceID: 4564}
-    - Class: 114
-      Script: {instanceID: 4810}
+      Script: {instanceID: 4814}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -245,6 +243,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: 114e8c1e8771e0e7ba48ab7a8aefd655
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FollowPlayer
   - hash:
       serializedVersion: 2
       Hash: f1d735cc1a21c3704ab52568f4fbfcf8
@@ -463,6 +467,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: 7c4bcfa992d30fb7ece90c3a5b694429
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerCollisionHandler
+  - hash:
+      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -677,8 +687,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 77a8fe047fdc5a60ba3bb450a040ecc6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetFactors
   platform: 5
   scenePathNames:
   - Assets/Scenes/MenuScene.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: A:/GEDAtomsUnityGitHubRepo/GEDAtomsUnity/Gamebuild/GEDatoms.exe
+  playerPath: A:/GEDAtomsUnityGitHubRepo/GEDAtomsUnity/Gamebuilds/Build 1.1/GEDatoms.exe
