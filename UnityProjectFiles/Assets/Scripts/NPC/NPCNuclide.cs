@@ -9,5 +9,6 @@ public class NPCNuclide : Nuclide
         uint randomA = (uint)Random.Range(1, 5);
 
         nuclideData = ndb.getNuclideData(randomA, randomA - 1);
+        GetComponent<EnemyRaycast>().myMass = nuclideData.A;
     }
 }

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerNuclide : Nuclide
 {
+    private string symbolold = "xy";
     new void Start()
     {
         base.Start();
@@ -17,6 +18,10 @@ public class PlayerNuclide : Nuclide
     private new void Update()
     {
         base.Update();
-        Debug.Log(nuclideData.symbol);
+        if(nuclideData.symbol != symbolold)
+        {
+            Debug.Log(nuclideData.symbol);
+            symbolold = nuclideData.symbol;
+        }
     }
 }
