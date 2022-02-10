@@ -4,7 +4,6 @@ public class EnemyRaycast : MonoBehaviour
 {
     public int raysToBeShoot;
     public float range;
-    public uint myMass;
     private Movement movement;
 
     private void Start() 
@@ -27,11 +26,11 @@ public class EnemyRaycast : MonoBehaviour
             if (hit.collider != null && hit.distance < range)
             {
                 Vector3 direction = new Vector3(hit.transform.position.x - transform.position.x, hit.transform.position.y - transform.position.y, hit.transform.position.z - transform.position.z);
-                if(hit.transform.GetComponent<Nuclide>().nuclideData.A < myMass)
+                if(hit.transform.GetComponent<Nuclide>().nuclideData.A < GetComponent<Nuclide>().nuclideData.A)
                 {
                     movement.direction = direction;
                 }
-                else if(hit.transform.GetComponent<Nuclide>().nuclideData.A > myMass)
+                else if(hit.transform.GetComponent<Nuclide>().nuclideData.A > GetComponent<Nuclide>().nuclideData.A)
                 {
                     movement.direction = direction * -1;
                 }
